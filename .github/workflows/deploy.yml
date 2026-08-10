@@ -27,20 +27,18 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22 # Updated to use the latest Node runner standard
+          node-version: 22
 
       - name: Install dependencies
-        run: npm install # Changed from 'npm ci' to 'npm install' to handle split folders safely
-        working-directory: portfolio
+        run: npm install
 
       - name: Build project
         run: npm run build
-        working-directory: portfolio
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './portfolio/dist'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
