@@ -160,7 +160,7 @@ export default function Hero() {
                   lineHeight: 1.65,
                 }}
               >
-                {profile.summary}
+                {profile.shortSummary}
               </Typography>
               <Stack direction="row" spacing={2} sx={{ mb: { xs: 6, md: 0 }, flexWrap: 'wrap', gap: 1 }}>
                 {/* scrolls down to projects section */}

@@ -11,10 +11,15 @@ export const profile = {
   phone: '+91 8179504819',
   email: 'ganeshdussa20@gmail.com',
   linkedin: 'https://linkedin.com/in/ganeshdussa', // update with your real handle
-  github: 'https://github.com/ganesh18h', // update with your real handle
+  github: 'https://github.com/ganeshdussa', // update with your real handle
   blog: 'https://medium.com/@ganeshdussa20',
-  summary:
+  // shown in the hero section up top - the original long-form intro
+  shortSummary:
     "Comfortable jumping between eras of computing in the same week — writing JCL to push batch jobs through IBM z/OS one day, then wiring up an LLM in Python to rewrite resumes the next. Java shows up everywhere in between: a JavaFX payroll calculator, a cosine-similarity plagiarism checker, and the backend logic tying it all together. Also shipped real front-end features on a live production site. Right now pulled in two directions that turn out to be more connected than they look — going deeper on mainframe internals (JCL, DB2, poking around Zowe) while figuring out how LLM agents actually work under the hood.",
+  // shown further down in the about section - different wording so it's not
+  // just the same paragraph repeated twice on the page
+  summary:
+    "Software developer with hands-on experience across Python, Java, and mainframe systems. On IBM z/OS, that means COBOL, JCL, and DB2 — running batch pipelines end to end. On the Java side, a JavaFX payroll calculator and a cosine-similarity plagiarism checker. In Python, an LLM-powered tool that rewrites resumes to match a job description. Also contributed front-end features to a live production website. Currently learning how LLM agents work under the hood, alongside going deeper into mainframe modernization tools like Zowe.",
   // these show up as the little stat boxes in the about section
   stats: [
     { label: 'IBM Z ADVOCACY RANK', value: '#31 GLOBAL' },
@@ -28,20 +33,19 @@ export const profile = {
 // instead of a plain download button (dev-humor thing). filenames need to match
 // actual PDFs placed in the public/ folder
 export const resumeBuilds = [
-  {  id: 'general',
+  {
+    id: 'general',
     filename: 'Ganesh_Dussa_Resume.pdf',
-    // tag: 'general · all-round',
-    stack: 'Java · Python · SQL · Gen AI',
-   
+    tag: 'general · all-round',
+    stack: 'Java · Python · SQL · Mainframe Basics',
   },
   {
-     id: 'mainframe',
+    id: 'mainframe',
     filename: 'Ganesh_Dussa_Mainframe_Resume.pdf',
     tag: 'stable · production-grade',
     stack: 'COBOL · JCL · DB2 · VSAM',
   },
 ]
-
 
 // work experience - just one job right now, but its an array so I can add more later
 export const experience = [
