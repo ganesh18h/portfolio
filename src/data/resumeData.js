@@ -36,7 +36,7 @@ export const resumeBuilds = [
   {
     id: 'general',
     filename: 'Ganesh_Dussa_Resume.pdf',
-    tag: 'general · all-round',
+    // tag: 'general · all-round',
     stack: 'Java · Python · SQL · Mainframe Basics',
   },
   {
