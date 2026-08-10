@@ -31,14 +31,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: portfolio
 
       - name: Build project
         run: npm run build
+        working-directory: portfolio
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './portfolio/dist' # Points directly to your compiled subfolder assets
 
       - name: Deploy to GitHub Pages
         id: deployment
