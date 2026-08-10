@@ -1,8 +1,3 @@
-// this file has all my resume info in one place
-// if I need to update anything on the site (my bio, projects, skills etc) I just edit here
-// and it updates everywhere automatically, dont need to touch any component files
-
-// basic info about me + the summary shown in the hero section
 export const profile = {
   name: 'Ganesh Dussa',
   role: 'Software Developer',
@@ -10,33 +5,29 @@ export const profile = {
   location: 'Hyderabad, India',
   phone: '+91 8179504819',
   email: 'ganeshdussa20@gmail.com',
-  linkedin: 'https://linkedin.com/in/ganeshdussa', // update with your real handle
-  github: 'https://github.com/ganeshdussa', // update with your real handle
+  linkedin: 'https://linkedin.com/in/ganeshdussa', 
+  github: 'https://github.com/ganesh18h',
   blog: 'https://medium.com/@ganeshdussa20',
-  // shown in the hero section up top - the original long-form intro
+  
   shortSummary:
-    "Comfortable jumping between eras of computing in the same week — writing JCL to push batch jobs through IBM z/OS one day, then wiring up an LLM in Python to rewrite resumes the next. Java shows up everywhere in between: a JavaFX payroll calculator, a cosine-similarity plagiarism checker, and the backend logic tying it all together. Also shipped real front-end features on a live production site. Right now pulled in two directions that turn out to be more connected than they look — going deeper on mainframe internals (JCL, DB2, poking around Zowe) while figuring out how LLM agents actually work under the hood.",
-  // shown further down in the about section - different wording so it's not
-  // just the same paragraph repeated twice on the page
+    "I work at the intersection of mainframe engineering and modern AI. From COBOL and JCL on z/OS to Java, Python, and LLM-based systems, I focus on solving problems across technology generations. Currently exploring agentic engineering and modern tooling for z/OS bringing automation, intelligence, and developer experience to systems built long before today's AI era.",
+
   summary:
-    "Software developer with hands-on experience across Python, Java, and mainframe systems. On IBM z/OS, that means COBOL, JCL, and DB2 — running batch pipelines end to end. On the Java side, a JavaFX payroll calculator and a cosine-similarity plagiarism checker. In Python, an LLM-powered tool that rewrites resumes to match a job description. Also contributed front-end features to a live production website. Currently learning how LLM agents work under the hood, alongside going deeper into mainframe modernization tools like Zowe.",
-  // these show up as the little stat boxes in the about section
+    "Software developer working across IBM Z, Java, Python, and AI. I build practical projects across mainframe and modern software, with hands-on experience in COBOL, JCL, DB2, VSAM, Java, and Python. My IBM Z work includes end-to-end batch processing on z/OS, while my application projects range from JavaFX applications and similarity-based plagiarism detection to LLM-powered tools. I also contribute to the IBM Z community through technical writing and community activities as an IBM Z Advocacy Program member. Currently, I'm exploring LLM agents and Zowe while learning more about connecting mainframe systems with modern development tools. I like understanding how things work under the hood and turning that knowledge into useful software.",
+  
   stats: [
-    { label: 'IBM Z ADVOCACY RANK', value: '#31 GLOBAL' },
+    { label: 'IBM Z ADVOCACY RANK', value: '#9 GLOBAL' },
     { label: 'ADVOCACY POINTS', value: '225' },
     { label: 'GRADUATED', value: '2025' },
     { label: 'CGPA', value: '7.02' },
   ],
 }
 
-// two resumes now - shown as a fake "ls" directory listing in ResumeSection.jsx
-// instead of a plain download button (dev-humor thing). filenames need to match
-// actual PDFs placed in the public/ folder
+
 export const resumeBuilds = [
   {
     id: 'general',
     filename: 'Ganesh_Dussa_Resume.pdf',
-    // tag: 'general · all-round',
     stack: 'Java · Python · SQL · Generative AI ',
   },
   {
@@ -47,7 +38,7 @@ export const resumeBuilds = [
   },
 ]
 
-// work experience - just one job right now, but its an array so I can add more later
+
 export const experience = [
   {
     company: 'Mad Sensei Studios',
@@ -63,8 +54,7 @@ export const experience = [
   },
 ]
 
-// all my projects - the "url" field is optional, only add it if the project has a live demo
-// (Projects.jsx checks "if p.url" and only shows the button when its there)
+
 export const projects = [
   {
     name: 'Mainframe Batch Processing & DB2 Operations',
@@ -81,7 +71,7 @@ export const projects = [
     name: 'Resume Tailor',
     tagline: 'JD-aware resume automation, powered by an LLM',
     stack: ['Python', 'NLP', 'Gemini API', 'PDF / DOCX Parsing', 'Git'],
-    url: 'https://ai-resume-optimizer-eight.vercel.app/', // this one has a live deployed version
+    url: 'https://ai-resume-optimizer-eight.vercel.app/',
     bullets: [
       'Built an end-to-end automation tool that removes manual resume editing — users upload a job description and existing resume, and the system instantly identifies matched and missing keywords.',
       'Implemented keyword extraction and comparison logic using NLP techniques, surfacing matched (green) and missing (red) keywords side-by-side.',
@@ -110,8 +100,7 @@ export const projects = [
   },
 ]
 
-// skills grouped into categories - the "group" key (like core_development) is just an id,
-// Skills.jsx has a GROUP_TITLES object that turns it into the nice readable heading
+
 export const skills = [
   {
     group: 'core_development',
@@ -148,7 +137,7 @@ export const skills = [
   },
 ]
 
-// education history, most recent... well actually oldest to newest here since thats how I listed it
+
 export const education = [
   {
     school: 'Narsimha Reddy Engineering College',
@@ -173,7 +162,6 @@ export const education = [
   },
 ]
 
-// all the certificates ive done
 export const certifications = [
   {
     name: 'Goldman Sachs Engineering Virtual Experience',
@@ -202,19 +190,24 @@ export const certifications = [
   },
 ]
 
-// awards / recognition - "url" is optional here too, only the medium one has a link right now
 export const recognition = [
   {
-    title: 'IBM Z Advocacy Hub — Global Rank #31',
+    title: 'IBM Z Advocacy Hub — Global Rank #9',
     detail: 'Q1 2026 · Earned 225 Advocacy Points through active contribution to the IBM Z & LinuxONE community.',
+  },
+  {
+    title: 'IBM Digital Badge — Community Contributor (Level 1)',
+    detail: 'Awarded by IBM for the IBM Z and LinuxONE Community Contributor program. Verified via Credly.',
+    url: 'https://www.credly.com/badges/7e24b0e3-369f-4eef-b071-ba9105c575de/public_url',
   },
   {
     title: 'IBM Digital Badge — Community Contributor (Level 2)',
     detail: 'Awarded by IBM, 2026, for the IBM Z and LinuxONE Community Contributor program. Verified via Credly.',
+    url: 'https://www.credly.com/badges/8736164e-5bde-4e7c-8589-834c3757ddda',
   },
   {
     title: 'Technical Writer, Medium',
     detail: 'Writing about mainframe development — enterprise batch processing on IBM z/OS, and my own journey into mainframe engineering and why I chose this path.',
-    url: 'https://medium.com/@ganeshdussa20', // my medium profile
+    url: 'https://medium.com/@ganeshdussa20',
   },
 ]
