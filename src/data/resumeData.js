@@ -10,8 +10,8 @@ export const profile = {
   location: 'Hyderabad, India',
   phone: '+91 8179504819',
   email: 'ganeshdussa20@gmail.com',
-  linkedin: 'https://linkedin.com/in/ganeshdussa', 
-  github: 'https://github.com/ganesh18h', 
+  linkedin: 'https://linkedin.com/in/ganeshdussa', // update with your real handle
+  github: 'https://github.com/ganesh18h', // update with your real handle
   blog: 'https://medium.com/@ganeshdussa20',
   summary:
     "Comfortable jumping between eras of computing in the same week — writing JCL to push batch jobs through IBM z/OS one day, then wiring up an LLM in Python to rewrite resumes the next. Java shows up everywhere in between: a JavaFX payroll calculator, a cosine-similarity plagiarism checker, and the backend logic tying it all together. Also shipped real front-end features on a live production site. Right now pulled in two directions that turn out to be more connected than they look — going deeper on mainframe internals (JCL, DB2, poking around Zowe) while figuring out how LLM agents actually work under the hood.",
@@ -24,19 +24,24 @@ export const profile = {
   ],
 }
 
-// only one resume ready for now - shown as a fake "ls" directory listing in
-// ResumeSection.jsx instead of a plain download button (dev-humor thing).
-// to add the mainframe-focused resume later: drop the PDF in public/, then add
-// a second object here like:
-// { id: 'mainframe', filename: 'Ganesh_Dussa_Mainframe_Resume.pdf', tag: 'stable · production-grade', stack: 'COBOL · JCL · DB2 · VSAM' }
+// two resumes now - shown as a fake "ls" directory listing in ResumeSection.jsx
+// instead of a plain download button (dev-humor thing). filenames need to match
+// actual PDFs placed in the public/ folder
 export const resumeBuilds = [
-  {
-    id: 'general',
+  {  id: 'general',
     filename: 'Ganesh_Dussa_Resume.pdf',
     // tag: 'general · all-round',
     stack: 'Java · Python · SQL · Gen AI',
+   
+  },
+  {
+     id: 'mainframe',
+    filename: 'Ganesh_Dussa_Mainframe_Resume.pdf',
+    tag: 'stable · production-grade',
+    stack: 'COBOL · JCL · DB2 · VSAM',
   },
 ]
+
 
 // work experience - just one job right now, but its an array so I can add more later
 export const experience = [
