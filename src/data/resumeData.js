@@ -188,6 +188,30 @@ export const certifications = [
     issuer: 'Self-directed',
     detail: 'JCL syntax and execution, COBOL program structure, and DB2 relational database management concepts.',
   },
+  {
+    name: 'Claude 101',
+    issuer: 'Anthropic Academy',
+    detail: 'Foundations of working with Claude — core capabilities, use cases, and best practices for everyday use.',
+    url: 'https://verify.skilljar.com/c/yzy2ynh2727i',
+  },
+  {
+    name: 'AI Fluency: Framework & Foundations',
+    issuer: 'Anthropic Academy',
+    detail: 'Core framework for working effectively and responsibly with AI systems like Claude.',
+    url: 'https://verify.skilljar.com/c/aemsasomwy74',
+  },
+  {
+    name: 'Claude with the Anthropic API',
+    issuer: 'Anthropic Academy',
+    detail: 'Building applications on the Anthropic API — messages, tool use, and integrating Claude into software.',
+    url: 'https://verify.skilljar.com/c/y5f2pms8397b',
+  },
+  {
+    name: 'Introduction to Model Context Protocol',
+    issuer: 'Anthropic Academy',
+    detail: 'Fundamentals of MCP — connecting Claude to external tools, data sources, and services.',
+    url: 'https://verify.skilljar.com/c/dtwckuuqk4u9',
+  },
 ]
 
 export const recognition = [
