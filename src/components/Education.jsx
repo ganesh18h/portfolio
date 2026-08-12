@@ -46,7 +46,26 @@ export default function Education() {
             <Box sx={{ mb: 4 }}>
               {certifications.map((c, idx) => (
                 <Box key={c.name} sx={{ py: 1.6, borderTop: idx === 0 ? 'none' : '1px solid', borderColor: 'divider' }}>
-                  <Typography sx={{ fontWeight: 600, color: 'text.primary', fontSize: '0.92rem' }}>{c.name}</Typography>
+                  {/* if this certification has a verify link (like the Anthropic Academy ones), make the name clickable */}
+                  {c.url ? (
+                    <Typography
+                      component="a"
+                      href={c.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{
+                        fontWeight: 600,
+                        color: 'secondary.main',
+                        fontSize: '0.92rem',
+                        textDecoration: 'none',
+                        '&:hover': { textDecoration: 'underline' },
+                      }}
+                    >
+                      {c.name}
+                    </Typography>
+                  ) : (
+                    <Typography sx={{ fontWeight: 600, color: 'text.primary', fontSize: '0.92rem' }}>{c.name}</Typography>
+                  )}
                   <Typography sx={{ fontSize: '0.8rem', color: 'secondary.main', mt: 0.2 }}>{c.issuer}</Typography>
                   <Typography sx={{ fontSize: '0.82rem', color: 'text.secondary', mt: 0.3, lineHeight: 1.5 }}>{c.detail}</Typography>
                 </Box>
