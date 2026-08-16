@@ -13,11 +13,12 @@ export const profile = {
     "I work at the intersection of mainframe engineering and modern AI. From COBOL and JCL on z/OS to Java, Python, and LLM-based systems, I focus on solving problems across technology generations. Currently exploring agentic engineering and modern tooling for z/OS bringing automation, intelligence, and developer experience to systems built long before today's AI era.",
 
   summary:
-    "Software developer with hands-on experience across Java, Python, AI, and IBM Z technologies. I build and experiment with software across application development, AI, and enterprise systems. My Java work includes JavaFX applications and a cosine-similarity based plagiarism detection system. In Python, I've developed LLM-powered tools focused on practical automation and document processing. On IBM z/OS, I work with COBOL, JCL, DB2, and VSAM, including end-to-end batch processing and job execution. Alongside development, I contribute to the IBM Z community through technical writing and my involvement in the IBM Z Advocacy Program. I'm also exploring LLM agents, Zowe, and modern approaches to connecting mainframe environments with contemporary developer tooling. My focus is on building reliable software, understanding systems at a deeper level, and continuously working across technologies that solve real engineering problems.",
+    "Software developer with hands-on experience across Java, Python, AI, and IBM Z technologies. I build and experiment with software across application development, AI, and enterprise systems. My Java work includes JavaFX applications and a cosine-similarity based plagiarism detection system. In Python, I've developed LLM-powered tools focused on practical automation and document processing. On IBM z/OS, I work with COBOL, JCL, DB2, and VSAM, including end-to-end batch processing and job execution. Alongside development, I contribute to the IBM Z community through technical writing and my involvement in the IBM Z Advocacy Program. I'm also exploring LLM agents, Zowe, and modern approaches to connecting mainframe environments with contemporary developer tooling. Outside of core development, I'm exploring quantitative research through WorldQuant BRAIN — building and testing alpha signals as a way to sharpen my data and statistical thinking. My focus is on building reliable software, understanding systems at a deeper level, and continuously working across technologies that solve real engineering problems.",
   
   stats: [
     { label: 'IBM Z ADVOCACY RANK', value: '#9 GLOBAL' },
     { label: 'ADVOCACY POINTS', value: '225' },
+    { label: 'WORLDQUANT BRAIN', value: 'BRONZE LEVEL' },
     { label: 'GRADUATED', value: '2025' },
     { label: 'CGPA', value: '7.02' },
   ],
@@ -240,7 +241,7 @@ export const achievements = [
     type: 'badge',
     title: 'Enterprise COBOL Programming with VSCode',
     issuer: 'IBM',
-    date: 'Aug 14, 2026',
+    date: '2026',
     detail: 'Verified digital badge for enterprise COBOL development using VS Code tooling on IBM Z.',
     url: 'https://www.credly.com/badges/6e6fd30a-282a-4063-8289-b91897e7419f/public_url',
   },
