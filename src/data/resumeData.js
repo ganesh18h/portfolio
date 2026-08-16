@@ -214,24 +214,66 @@ export const certifications = [
   },
 ]
 
-export const recognition = [
+// achievements — badges, digital credentials, and milestones.
+// `type` drives the little tag on each card: 'badge' | 'certificate' | 'milestone'
+// `url` can be an external credential link (Credly, etc.) OR a local file under /public
+// (e.g. a PDF certificate) — both render identically, just open in a new tab.
+// New badges/certs just get appended here — the grid in Achievements.jsx handles the rest,
+// no component changes needed as more come in.
+export const achievements = [
   {
+    type: 'milestone',
     title: 'IBM Z Advocacy Hub — Global Rank #9',
-    detail: 'Q1 2026 · Earned 225 Advocacy Points through active contribution to the IBM Z & LinuxONE community.',
+    issuer: 'IBM Z Advocacy Program',
+    date: 'Q1 2026',
+    detail: 'Earned 225 Advocacy Points through active contribution to the IBM Z & LinuxONE community.',
   },
   {
+    type: 'certificate',
+    title: 'WorldQuant Challenge — Bronze Level',
+    issuer: 'WorldQuant BRAIN',
+    date: '2026',
+    detail: 'Reached Bronze status in the WorldQuant Challenge, unlocking additional Alpha Examples. On track toward Silver at 5,000 points.',
+    url: `${import.meta.env.BASE_URL}WorldQuant_Challenge_Bronze_Certificate.pdf`,
+  },
+  {
+    type: 'badge',
+    title: 'Enterprise COBOL Programming with VSCode',
+    issuer: 'IBM',
+    date: 'Aug 14, 2026',
+    detail: 'Verified digital badge for enterprise COBOL development using VS Code tooling on IBM Z.',
+    url: 'https://www.credly.com/badges/6e6fd30a-282a-4063-8289-b91897e7419f/public_url',
+  },
+  {
+    type: 'badge',
+    title: 'IBM Z Xplore — Concepts',
+    issuer: 'IBM',
+    date: 'Aug 14, 2026',
+    detail: 'Verified digital badge covering foundational IBM Z and mainframe systems concepts.',
+    url: 'https://www.credly.com/badges/c909440a-bb34-4f6a-b83e-4fca7f0fd603/public_url',
+  },
+  {
+    type: 'badge',
     title: 'IBM Digital Badge — Community Contributor (Level 1)',
-    detail: 'Awarded by IBM for the IBM Z and LinuxONE Community Contributor program. Verified via Credly.',
+    issuer: 'IBM',
+    date: '2026',
+    detail: 'Awarded by IBM for the IBM Z and LinuxONE Community Contributor program.',
     url: 'https://www.credly.com/badges/7e24b0e3-369f-4eef-b071-ba9105c575de/public_url',
   },
   {
+    type: 'badge',
     title: 'IBM Digital Badge — Community Contributor (Level 2)',
-    detail: 'Awarded by IBM, 2026, for the IBM Z and LinuxONE Community Contributor program. Verified via Credly.',
+    issuer: 'IBM',
+    date: '2026',
+    detail: 'Awarded by IBM for the IBM Z and LinuxONE Community Contributor program.',
     url: 'https://www.credly.com/badges/8736164e-5bde-4e7c-8589-834c3757ddda',
   },
   {
+    type: 'milestone',
     title: 'Technical Writer, Medium',
-    detail: 'Writing about mainframe development — enterprise batch processing on IBM z/OS, and my own journey into mainframe engineering and why I chose this path.',
+    issuer: 'Self-published',
+    date: 'Ongoing',
+    detail: 'Writing about mainframe development — enterprise batch processing on IBM z/OS, and my own journey into mainframe engineering.',
     url: 'https://medium.com/@ganeshdussa20',
   },
 ]
