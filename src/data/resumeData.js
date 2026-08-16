@@ -248,7 +248,7 @@ export const achievements = [
     type: 'badge',
     title: 'IBM Z Xplore — Concepts',
     issuer: 'IBM',
-    date: 'Aug 14, 2026',
+    date: '2026',
     detail: 'Verified digital badge covering foundational IBM Z and mainframe systems concepts.',
     url: 'https://www.credly.com/badges/c909440a-bb34-4f6a-b83e-4fca7f0fd603/public_url',
   },
